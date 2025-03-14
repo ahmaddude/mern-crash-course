@@ -6,7 +6,7 @@ export const useProductStore = create((set) => ({
 	createProduct: async (newProduct) => {
 		console.log("Sending data:", newProduct); // Debugging line
 		try {
-			const res = await fetch("http://localhost:5000/api/products", {
+			const res = await fetch("/api/products", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
